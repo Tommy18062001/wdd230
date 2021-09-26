@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header rules */
+
+header, footer {
+    background-color: #12A800;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {color: white;}
+
+header h2 {color: whitesmoke}
+
+/* main rules */
+main {
+    width: 100%;
+    display: grid;
+    justify-content:center;
+}
+
+main figure {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+}
+
+main figure img {
+    width: 100%;
+}
+
+main figure figcaption {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    padding: 2rem 0;
+}
+
+main section {
+    max-width: 400px;
+    height: auto;
+    margin: 3rem 1rem;
+    box-shadow: 0px 2px 2px 0.5px rgb(196, 192, 192);
+    border-radius: 10px;
+    background-color: #DEE1E6;
+    overflow: hidden;
+}
+
+main section h3 {
+    height: 4rem;
+    margin: 0;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-color: #12A800;
+    color: white;
+    text-align: center;
+}
+
+main p {
+    padding: 0 1rem;
+}
+
+
+/* footer rules */
+footer {color: white;}
