@@ -1,7 +1,5 @@
-let dateData = new Date();
+const myDate = new Date();
+const currentYear = myDate.getFullYear();
 
-let lastUpdated = document.getElementById("myDate");
-let myYear = document.getElementById("myYear");
-
-lastUpdated.textContent = document.lastModified;
-myYear.textContent = dateData.getFullYear();
+/* update the year in the footer*/
+document.querySelector("#year").textContent = currentYear;
