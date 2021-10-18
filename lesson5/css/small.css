@@ -146,7 +146,7 @@ main section .contact {
   grid-template-columns: 1fr 1fr;
 }
 
-main section .contact picture {
+main section .contact div.map {
   display: none;
 }
 
