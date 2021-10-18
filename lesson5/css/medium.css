@@ -7,7 +7,7 @@
         display: flex;
     }
 
-    nav ul {margin-left: 10px;}
+    nav ul li {flex-basis: calc(100% / 6);}
     
     nav ul li a {
         border: none;

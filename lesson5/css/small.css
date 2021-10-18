@@ -57,10 +57,10 @@ button {
 }
 
 .nav-wrapper {
-  background-color: #e0995e;
+  background-color: #bbb;
 }
 nav {
-  background-color: #e0995e;
+  background-color: #bbb;
 }
 
 nav ul {
@@ -75,7 +75,7 @@ nav ul a {
   align-items: center;
   text-decoration: none;
   padding: 20px;
-  color: white;
+  color: black;
 }
 
 nav ul li .active {background-color: #e48538;}
