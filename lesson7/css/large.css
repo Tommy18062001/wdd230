@@ -8,8 +8,9 @@
     /* overide the margin of the footer in order to make space between the main and the footer*/
     footer {margin-top: 50px;}
     
-    main article {
+    main .gallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    
+
+    main .gallery figure:hover {box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.5);}
 }

@@ -18,14 +18,3 @@ document.querySelector("#today").textContent =  weekDay[theDay] + ", " + today +
 function toggleMenu() {
     document.getElementById("ourNav").classList.toggle("hide")
 }
-
-/* Work on the banner message that will display a message*/
-/* Friday = 5 */
-
-if (theDay === 5) {
-  document.querySelector("#banner").classList.toggle("show-banner");
-}
-
-else {
-  document.querySelector("#banner").classList.toggle("hide-banner");
-}
