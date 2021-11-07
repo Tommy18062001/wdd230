@@ -1,0 +1,14 @@
+@media only screen and (min-width: 1024px) {
+
+    header, nav, main, footer {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    /* overide the margin of the footer in order to make space between the main and the footer*/
+    footer {margin-top: 50px;}
+
+    main form label.side {
+        padding: .5rem 0;
+    }
+}

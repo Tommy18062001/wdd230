@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preston</title>
+    <link rel="shortcut icon" href="/home-portal/favicon.ico" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header  -->
+    <div class="header-wrapper">
+      <header>
+        <picture>
+          <img src="images/weather.png" alt="our_logo" />
+        </picture>
+        <div>
+          <h1>96th Floor Weather</h1>
+          <h2>Better Weather Up here</h2>
+        </div>
+      </header>
+    </div>
+
+    <!-- Nav part -->
+    <div class="nav-wrapper">
+      <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="ourNav" class="hide">
+          <li><a href="#">Home</a></li>
+          <li>
+            <a
+              href="https://tommy18062001.github.io/wdd230/lesson6/preston.html"
+              href="#"
+              >Preston</a
+            >
+          </li>
+          <li><a href="#">Sode Spring</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="#" class="active">Storm center</a></li>
+          <li>
+            <a
+              href="https://tommy18062001.github.io/wdd230/lesson7/gallery.html"
+              >Gallery</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+        <h1>Report a Storm</h1>
+        <p>Thanks for letting us know</p>
+    </main>
+
+    <div id="footer-wrapper">
+      <footer>&copy; Tommy Sylver | <span id="today"></span></footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+  </body>
+</html>
