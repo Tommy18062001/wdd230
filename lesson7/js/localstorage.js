@@ -4,7 +4,7 @@
 
 function displayAmountOfTime() {
     const today = Date.now()
-    const milliSecondsToDays = 8460000;
+    const milliSecondsToDays = 86400000;
 
     // today visit
     const todayVisit = Math.floor(( today / milliSecondsToDays));
