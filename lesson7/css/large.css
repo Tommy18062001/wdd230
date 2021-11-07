@@ -7,4 +7,8 @@
 
     /* overide the margin of the footer in order to make space between the main and the footer*/
     footer {margin-top: 50px;}
+    
+    main .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
