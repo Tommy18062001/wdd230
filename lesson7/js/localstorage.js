@@ -15,7 +15,10 @@ function displayAmountOfTime() {
     // if it's the first visit of the user, just set it to today visit 
     if (lastVisit === 0) {
         lastVisit = todayVisit;
+        
     }
+
+    // console.log(lastVisit);
     
     // the amount of time since last visit
     amountOfTime = todayVisit - lastVisit;
