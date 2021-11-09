@@ -116,16 +116,18 @@ main form fieldset  {
 }
 
 main form legend {
-  color: #e48538;
+  color: #4f5d73;
   margin: 0 1rem;
   padding: 0 .5rem;
+  font-weight: bold;
 }
 
 main label.top, main label.range {
     display: block;
     padding-top: 1rem;
-    color: #e48538;
+    color: #4f5d73;
     font-size: .9rem;
+    font-weight: bold;
 }
 
 main label.range input {
@@ -166,7 +168,7 @@ main form label.side {
 
 form input.btn {
   border: none;
-  background-color: #e48538;
+  background-color: #4f5d73;
   color: white;
   border-radius: 1rem;
   padding: .75rem 1.5rem;
@@ -174,13 +176,6 @@ form input.btn {
   width: 96%;
   max-width: 20rem;
   cursor: pointer;
-}
-
-form input.btn:hover {
-  border: 1px solid #e48538;
-  background-color: transparent;
-  color: #e48538;
-  padding: 11px;
 }
 
 /* Message */
