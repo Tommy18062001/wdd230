@@ -4,10 +4,14 @@
 
 function displayAmountOfTime() {
     const todayVisit = Date.now()
-
+    
     // store the last time the user visited our site
     let lastVisit = localStorage.getItem('lastvisit');
-    
+
+    // check the lastVisit value
+    if (lastVisit == null) {
+        localStorage.setItem("lastvisit", todayVisit);
+    }
     // the amount of time since last visit
     amountOfTime = todayVisit - lastVisit;
 
