@@ -3,31 +3,22 @@
 // information where you deem fit on the page.
 
 function displayAmountOfTime() {
-    const today = Date.now()
-    const milliSecondsToDays = 86400000;
-
-    // today visit
-    const todayVisit = Math.floor(( today / milliSecondsToDays));
+    const todayVisit = Date.now()
 
     // store the last time the user visited our site
     let lastVisit = localStorage.getItem('lastvisit');
-
-    // if it's the first visit of the user, just set it to today visit 
-    if (lastVisit === 0) {
-        lastVisit = todayVisit;
-        
-    }
-
-    // console.log(lastVisit);
     
     // the amount of time since last visit
     amountOfTime = todayVisit - lastVisit;
+
+    // convert it to be in days
+    toDays = Math.floor(amountOfTime / (1000 * 60 * 60 * 24));
 
     // update the local storage info
     localStorage.setItem("lastvisit", todayVisit);
 
     // display it on the website (footer)
-    document.getElementById("lastvisit").textContent = amountOfTime;
+    document.getElementById("lastvisit").textContent = toDays;
 }
 
 window.onload = addEventListener("load", displayAmountOfTime);
