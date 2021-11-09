@@ -128,6 +128,7 @@ main label.top, main label.range {
     color: #4f5d73;
     font-size: .9rem;
     font-weight: bold;
+
 }
 
 main label.range input {
@@ -154,8 +155,9 @@ form label.top input, form label.top select, form label.top textarea {
 main fieldset div {
   padding-top: 1rem;
   padding-bottom: .5rem;
-  color: #e48538;
+  color: #4f5d73;
   font-size: .9rem;
+  font-weight: bold;
 }
 
 main form label.side {
