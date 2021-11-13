@@ -5,7 +5,37 @@
         margin: 0 auto;
     }
 
+    main .town-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    section {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    section div {
+        width: max-content;
+    }
+
+    section:nth-child(2) {
+        flex-direction: column;
+    }
+
+    section img {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    section:nth-child(2) img {
+        width: 80%;
+        margin-right: 0;
+    }
+
+
     /* overide the margin of the footer in order to make space between the main and the footer*/
     footer {margin-top: 50px;}
+
 
 }
