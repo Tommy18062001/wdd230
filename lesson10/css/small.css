@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav,
+h1,
+h2,
+footer {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.header-wrapper {
+  background-color: #4f5d73;
+}
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #4f5d73;
+  color: white;
+}
+
+header h1 {
+  font-size: 1.3rem;
+}
+
+header h2 {
+  font-size: 1rem;
+}
+
+header picture {
+  width: 75px;
+  height: auto;
+  margin-right: 1rem;
+  margin-left: 0.6rem;
+}
+
+header picture img {
+  width: 100%;
+}
+
+/* style our hamburger*/
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav-wrapper {
+  background-color: #bbb;
+}
+nav {
+  background-color: #bbb;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+}
+
+nav ul li .active {
+  background-color: #e48538;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+nav ul a:hover {
+  background-color: #e48538;
+}
+
+nav ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+nav ul li .active {
+  background-color: #e48538;
+}
+
+main {
+  min-height: 50vh;
+}
+
+main h1 {
+  margin-left: 20px;
+}
+
+main .hero-parent {
+  max-width: 1024px;
+  position: relative;
+}
+
+.hero-description {
+  margin: 20px;
+  padding: 20px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+main picture {
+  width: 100%;
+  height: auto;
+}
+
+main picture img {
+  width: 100%;
+}
+
+main section {
+  margin: 50px 20px 0 20px;
+}
+
+/* We notice that the forecast is hidden in the small view */
+main .forecast-section {
+  display: none;
+}
+
+main .forecast p {
+  margin: 0;
+}
+
+main section .article img {
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
+main section .contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+main section .contact div.map {
+  display: none;
+}
+
+div#footer-wrapper {
+  background-color: #4f5d73;
+}
+footer {
+  width: 100%;
+  padding: 15px;
+  background-color: #4f5d73;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  position: sticky;
+  font-size: 1rem;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*----- banner message -----*/
+div#banner {
+  margin: 20px;
+  padding: 20px;
+  width: fit-content;
+  background-color: #ddd;
+  color: black;
+  border-radius: 5px;
+}
+div.show-banner {
+  display: block;
+}
+div.hide-banner {
+  display: none;
+}
