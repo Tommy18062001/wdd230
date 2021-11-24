@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storm Center</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/stormcenter/small.css" rel="stylesheet" />
+    <link href="css/stormcenter/medium.css" rel="stylesheet" />
+    <link href="css/stormcenter/large.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header  -->
+    <div class="header-wrapper">
+      <header>
+        <picture>
+          <img src="images/weather.png" alt="our_logo" />
+        </picture>
+        <div>
+          <h1>96th Floor Weather</h1>
+          <h2>Better Weather Up here</h2>
+        </div>
+      </header>
+    </div>
+
+    <!-- Nav part -->
+    <div class="nav-wrapper">
+      <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="ourNav" class="hide">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="preston.html">Preston</a></li>
+          <li><a href="sodaspring.html">Sode Spring</a></li>
+          <li><a href="fishhaven.html">Fish Haven</a></li>
+          <li><a href="stormcenter.html" class="active">Storm center</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+       <h1>Report a Storm</h1>
+      <form action="thanks.html" method="GET">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label class="top">Name* <input type="text" name="name" placeholder="Full Name" pattern="[A-z\s]{5,}" required/></label>
+            <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com" /></label>
+            <label class="top">Phone* <input type="tel" name="phone" placeholder="0340309175" required /> </label>
+            <label class="top">Zip Code* <input type="number" name="zipcode" placeholder="45039" required /></label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Storm Information</legend>
+            <label class="top"> Storm Date <input type="date" name="stormdate" /> </label>
+            <label class="range">Storm Severity <input type="range" name="stormseverity" value="5" min="1" max="10" oninput="updateValue(this.value)"/>
+              <span id="severity">5</span>
+            </label>
+            
+            <label class="top"> Storm Region
+                <select name="stormregion">
+                    <option value="">Please Select &#9662;</option>
+                    <option value="preston">Preston</option>
+                    <option value="soda_spring">Soda Spring</option>
+                    <option value="fish_haven">Fish Haven</option>
+                </select>
+            </label>
+
+            <div>User in danger Level</div>
+            <label class="side"><input type="radio" name="dangerlevel" value="yes" /> Yes</label>
+            <label class="side"><input type="radio" name="dangerlevel" value="no" /> No</label>
+            <label class="side"><input type="radio" name="dangerlevel" value="maybe" /> Maybe</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label class="top">
+                Comments
+                <textarea name="comments" cols="30" rows="10"></textarea>
+              </label>
+        </fieldset>
+        <input type="submit" value="Send a report" class="btn">
+      </form>
+    </main>
+
+    <div id="footer-wrapper">
+      <footer>&copy; Tommy Sylver | <span id="today"></span></footer>
+    </div>
+
+    <script src="js/stormcenter/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+  </body>
+</html>

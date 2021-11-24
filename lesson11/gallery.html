@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/gallery/small.css" rel="stylesheet" />
+    <link href="css/gallery/medium.css" rel="stylesheet" />
+    <link href="css/gallery/large.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <!-- Header  -->
+    <div class="header-wrapper">
+      <header>
+        <picture>
+          <img src="images/weather.png" alt="our_logo" />
+        </picture>
+        <div>
+          <h1>96th Floor Weather</h1>
+          <h2>Better Weather Up here</h2>
+        </div>
+      </header>
+    </div>
+
+    <!-- Nav part -->
+    <div class="nav-wrapper">
+      <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="ourNav" class="hide">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="preston.html">Preston</a></li>
+          <li><a href="sodaspring.html">Sode Spring</a></li>
+          <li><a href="fishhaven.html">Fish Haven</a></li>
+          <li><a href="stormcenter.html">Storm center</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <!-- Gallery main section -->
+      <h1>Weather Gallery</h1>
+      <div class="gallery">
+        <figure>
+          <img src="images/gallery/placeholder.png" alt="forest" data-src="images/gallery/gallery1.jpg">
+          <figcaption>Autumn</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/placeholder.png" alt="forest" data-src="images/gallery/gallery2.jpg">
+          <figcaption>Sunlight</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/placeholder.png" alt="forest" data-src="images/gallery/gallery3.jpg">
+          <figcaption>Blue Sky</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/placeholder.png" alt="forest" data-src="images/gallery/gallery4.jpg">
+          <figcaption>Snow</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/placeholder.png" alt="forest" data-src="images/gallery/gallery5.jpg">
+          <figcaption>Lake under white clouds</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/placeholder.png" alt="forest" data-src="images/gallery/gallery6.jpg">
+          <figcaption>Lightning during nighttime</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/placeholder.png" alt="forest" data-src="images/gallery/gallery7.jpg">
+          <figcaption>CLouds during golden hour</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/placeholder.png" alt="forest" data-src="images/gallery/gallery8.jpg">
+          <figcaption>The Umbrella</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/placeholder.png" alt="forest" data-src="images/gallery/gallery9.jpg">
+          <figcaption>Lightning</figcaption>
+        </figure>
+      </div>
+    </main>
+
+    <div id="footer-wrapper">
+      <footer>&copy; Tommy Sylver | <span id="today"></span> | Last Visited: <span id="lastvisit"></span></footer>
+    </div>
+
+    <script src="js/gallery/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/gallery/lazyload.js"></script>
+    <script src="js/gallery/localstorage.js"></script>
+  </body>
+</html>

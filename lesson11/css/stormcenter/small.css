@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav,
+h1,
+h2,
+footer {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.header-wrapper {
+  background-color: #4f5d73;
+}
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #4f5d73;
+  color: white;
+}
+
+header h1 {
+  font-size: 1.3rem;
+}
+
+header h2 {
+  font-size: 1rem;
+}
+
+header picture {
+  width: 75px;
+  height: auto;
+  margin-right: 1rem;
+  margin-left: 0.6rem;
+}
+
+header picture img {
+  width: 100%;
+}
+
+/* style our hamburger*/
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav-wrapper {
+  background-color: #bbb;
+}
+nav {
+  background-color: #bbb;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+}
+
+nav ul li .active {
+  background-color: #e48538;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+nav ul a:hover {
+  background-color: #e48538;
+}
+
+nav ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+nav ul li .active {
+  background-color: #e48538;
+}
+
+/*---------------------Main-----------------------------*/
+main {
+  padding: 20px;
+}
+
+main h1 {
+  margin: 25px 20px;
+}
+
+main form fieldset  {
+  margin: 50px 0;
+  border: 1px solid #4f5d73;
+  border-radius: 10px;
+  padding: 30px 2%;
+}
+
+main form legend {
+  color: #4f5d73;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+  font-weight: bold;
+}
+
+main label.top, main label.range {
+    display: block;
+    padding-top: 1rem;
+    color: #4f5d73;
+    font-size: .9rem;
+    font-weight: bold;
+
+}
+
+main label.range input {
+  display: block;
+  margin: .75rem 0;
+}
+
+main label.range span {color: black;}
+
+form label.top input, form label.top select, form label.top textarea {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  padding: .75rem;
+  margin: .75rem 0;
+  color: black;
+  width: 100%;
+  max-width: 20rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+main fieldset div {
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  color: #4f5d73;
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+main form label.side {
+    display: block;
+    padding: .8rem 0;
+    font-size: .9rem;
+    color: black;
+}
+
+
+form input.btn {
+  border: none;
+  background-color: #4f5d73;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+  cursor: pointer;
+}
+
+/* Message */
+main p {margin-left: 20px;}
+
+div#footer-wrapper {
+  background-color: #4f5d73;
+}
+footer {
+  width: 100%;
+  padding: 15px;
+  background-color: #4f5d73;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  position: sticky;
+  font-size: 1rem;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+

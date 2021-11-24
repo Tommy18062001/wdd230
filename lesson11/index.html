@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/home/small.css" rel="stylesheet" />
+    <link href="css/home/medium.css" rel="stylesheet" />
+    <link href="css/home/large.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <!-- Header  -->
+    <div class="header-wrapper">
+      <header>
+        <picture>
+          <img src="images/weather.png" alt="our_logo" />
+        </picture>
+        <div>
+          <h1>96th Floor Weather</h1>
+          <h2>Better Weather Up here</h2>
+        </div>
+      </header>
+    </div>
+
+    <!-- Nav part -->
+    <div class="nav-wrapper">
+      <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="ourNav" class="hide">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="preston.html">Preston</a></li>
+          <li><a href="sodaspring.html">Sode Spring</a></li>
+          <li><a href="fishhaven.html">Fish Haven</a></li>
+          <li><a href="stormcenter.html">Storm center</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <h1>Home</h1>
+      <p>The Weather in your town</p>
+      <p><a href="https://tommy18062001.github.io/wdd230/lesson9/homewireframes.html" target="_blank">Wireframes</a></p>
+
+      <div class="banner">
+        <img src="images/home/svg/weather.svg" alt="banner image">
+      </div>
+
+      <div class="town-cards">
+      </div>
+    
+    </main>
+
+    <div id="footer-wrapper">
+      <footer>&copy; Tommy Sylver | <span id="today"></span></footer>
+    </div>
+
+    <script src="js/home/script.js"></script>
+    <script src="js/home/towns.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+  </body>
+</html>
