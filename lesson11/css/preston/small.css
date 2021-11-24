@@ -192,3 +192,7 @@ div.show-banner {
 div.hide-banner {
   display: none;
 }
+
+
+/* Events */
+section .events ul li {margin: 15px auto;}
