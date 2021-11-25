@@ -45,7 +45,9 @@
 
   main section .forecast {
       display: grid;
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      
   }
 
   main section .forecast div {
@@ -57,16 +59,18 @@
       height: 150px;
       border-radius: 5px;
       background-color: #ddd;
-
+      overflow: hidden;
   }
 
  .forecast div h3 {
-     background-color: #e48538;
+     background-color: #4f5d73;
+     color: white;
      margin: 0;
      width: 100%;
      padding: 10px;
-     margin-bottom: 20px;
+     margin-bottom: 15px;
      text-align: center;
+     font-weight: 300;
  }
 
  .forecast div img {
