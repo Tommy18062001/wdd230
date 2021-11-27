@@ -151,6 +151,10 @@ main section .article img {
   border-radius: 10px;
 }
 
+main section .article p {
+  line-height: 1.8rem;
+}
+
 main section .contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
