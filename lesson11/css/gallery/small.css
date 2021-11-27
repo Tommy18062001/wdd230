@@ -104,8 +104,10 @@ main {
 }
 
 main h1 {
+  margin-top: 50px;
   margin-left: 20px;
   margin-bottom: 50px;
+  font-size: 2rem;
 }
 
 main .gallery {
